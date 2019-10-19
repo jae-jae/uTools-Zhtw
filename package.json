@@ -1,0 +1,68 @@
+{
+  "name": "utools-finder",
+  "version": "1.0.0",
+  "description": "uTools 在 MacOS 下的文件搜索插件",
+  "author": "Jaeger <JaegerCode@gmail.com>",
+  "homepage": "https://github.com/jae-jae/uTools-Finder",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build && cp -r app/* dist && cp README.md dist",
+    "dev": "concurrently 'vue-cli-service build --watch --mode development' 'wait-on dist && gulp'",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src"
+  },
+  "dependencies": {
+    "cnchar": "^2.0.2",
+    "cnchar-trad": "^2.0.2",
+    "view-design": "^4.0.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@types/utools": "https://github.com/kyuuseiryuu/utools-types",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "babel-eslint": "^10.0.1",
+    "concurrently": "^4.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "gulp": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21",
+    "wait-on": "^3.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

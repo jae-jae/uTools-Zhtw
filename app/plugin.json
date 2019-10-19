@@ -1,0 +1,49 @@
+{
+	"pluginName": "Zhtw",
+	"description": "繁体字与简体字互转",
+	"version": "1.0.0",
+	"author": "Jaeger",
+    "homepage": "https://github.com/jae-jae",
+	"main": "index.html",
+	"preload": "preload.js",
+	"logo": "icon.png",
+	"platform": ["win32", "darwin", "linux"],
+	"development": {
+		"main": "http://localhost:8080/index.html"
+	},
+	"features": [
+	    {
+			"code": "zhtw",
+			"explain": "繁体字与简体字互转",
+	        "cmds":[
+				"zhtw"
+			]
+		},
+		{
+			"code": "2zh",
+			"explain": "繁体字转简体字",
+	        "cmds":[
+				"2zh",
+				{
+					"type": "over",
+					"label": "2zh"
+				}
+			]
+		},
+		{
+			"code": "2tw",
+			"explain": "简体字转繁体字",
+	        "cmds":[
+				"2tw",
+				{
+					"type": "over",
+					"label": "2tw"
+				}
+			]
+	    }
+	],
+	"pluginSetting":{
+        "single": false,
+        "height": 470
+    }
+}
