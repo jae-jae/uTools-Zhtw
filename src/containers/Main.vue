@@ -72,7 +72,7 @@ export default {
       this.cacheAction = null
     },
     copy () {
-      Electron.clipboard.writeText(this.toText)
+      Preload.copyText(this.toText)
       this.$Message.info('内容已复制到剪切板!')
     },
     fromTextChange () {

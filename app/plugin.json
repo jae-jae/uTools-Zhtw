@@ -1,7 +1,7 @@
 {
 	"pluginName": "Zhtw",
 	"description": "繁体字与简体字互转",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Jaeger",
     "homepage": "https://github.com/jae-jae",
 	"main": "index.html",

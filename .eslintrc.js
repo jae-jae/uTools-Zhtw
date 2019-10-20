@@ -9,7 +9,7 @@ module.exports = {
     },
     extends: 'standard',
     globals: {
-        Electron: true,
+        Preload: true,
         utools: true
     },
     plugins: [
